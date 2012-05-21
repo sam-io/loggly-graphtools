@@ -24,9 +24,9 @@ to load the extensions into the Loggly command line
 Once loaded you can pipe output from a search into the perfstats command
 like so 
 
-    search | perfStats json.ExecutionTime
+    search | perfstats json.ExecutionTime
 
-The parameter tells the perfStats command which property to plot on the 
+The parameter tells the perfstats command which property to plot on the 
 graph.
 
 
