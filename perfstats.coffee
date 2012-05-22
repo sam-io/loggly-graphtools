@@ -29,12 +29,28 @@ loggly.bark.external_command {
                 options = {
                     title:  "Performance",
                     backgroundColor: "transparent",
+                    height: 400,
+                    chartArea: {                        
+                        width: "93%"
+                    },
+                    fontName: '"Lucida Grande","Lucida Sans Unicode","Verdana","Arial","Helvetica","sans-serif"'
+                    fontSize: 11,
+                    hAxis: {
+                        textStyle: { color: "#666" }
+                    },
+                    vAxis: {
+                        textStyle: { color: "#666" },
+                        gridlines: { color: "#333" }
+                        baselineColor: "#C0D0E0"
+                    },
+                    titleTextStyle: { color: "#3E576F", fontSize:16  },                    
                     animation: {
                         duration: 500,
                         easing: "linear"
                     }
                 }
-									
+                
+                									
                 chart = new google.visualization.LineChart(elem[0])
                 google.visualization.events.addListener(chart, 'ready', ()->
                     if !datadisplayed
